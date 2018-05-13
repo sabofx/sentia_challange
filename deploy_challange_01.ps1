@@ -1,7 +1,9 @@
-﻿Connect-AzureRmAccount
+﻿#https://github.com/sabofx/sentia_challange.git
+
+Connect-AzureRmAccount
 
 New-AzureRmResourceGroup -Name rgsentia -Location "westeurope"
-New-AzureRmResourceGroupDeployment -ResourceGroupName rgsentia -TemplateFile azuredeploy.json
+New-AzureRmResourceGroupDeployment -ResourceGroupName rgsentia -TemplateFile template.json -TemplateParameterFile parameters.json
 
 New-AzureRmTag -Name Environment -Value 'Test'
 New-AzureRmTag -Name Company -Value 'Sentia'

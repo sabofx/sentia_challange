@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "sentia002"
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "accountType": {
+            "value": "Standard_RAGRS"
+        },
+        "kind": {
+            "value": "Storage"
+        },
+        "httpsTrafficOnlyEnabled": {
+            "value": true
+        },
+        "storageNamePrefix":{
+            "value": "sentia"
+        },
+        "storageSKU":{
+            "value": "Standard_LRS"
+        }
+    }
+}

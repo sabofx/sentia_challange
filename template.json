@@ -46,7 +46,7 @@
         "location": "[resourceGroup().location]",
         "tags": {},
         "properties": {
-          "supportsHttpsTrafficOnly": "[parameters('httpsTrafficOnlyEnabled')]",
+          "supportsHttpsTrafficOnly": "[parameters('httpsTrafficOnlyEnabled')]",          
           "encryption":{
             "services":{
               "blob":{
